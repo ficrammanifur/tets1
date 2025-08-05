@@ -68,7 +68,7 @@
 ```
 
 ### 📊 Flowchart Sistem
-\`\`\`mermaid
+```mermaid
 graph TD
     A(Start) --> B[Inisialisasi LCD, Servo, Pin Sensor]
     B --> C[Baca Jarak dari Sensor Ultrasonik]
@@ -91,7 +91,7 @@ graph TD
     style J fill:#e1f5fe
     style K fill:#e1f5fe
     style L fill:#e1f5fe
-\`\`\`
+```
 
 ---
 

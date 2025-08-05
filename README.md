@@ -99,19 +99,12 @@ graph TD
 ### 📦 Perangkat Keras
 | Komponen | Spesifikasi | Quantity | Pin Connection | Fungsi |
 |----------|-------------|----------|----------------|---------|
-
 | **Arduino/ESP32** | Arduino Uno/Nano/ESP32 | 1 | - | Mikrokontroler utama |
-
 | **Servo Motor** | SG90/MG90S | 3 | 10, 9, 11 | Aktuator jari |
-
 | **Sensor Ultrasonik** | HC-SR04 | 1 | Trig: 12, Echo: 13 | Deteksi jarak |
-
 | **LCD I2C** | 16x2, Address 0x27 | 1 | SDA, SCL (A4, A5 pada Uno) | Menampilkan status |
-
 | **Jumper Wires** | Male-Male, Male-Female | ~10 | - | Koneksi |
-
 | **Breadboard** | Opsional | 1 | - | Memudahkan wiring |
-
 | **Power Supply** | 5V (dari Arduino/eksternal) | 1 | - | Catu daya |
 
 ### 💻 Perangkat Lunak
@@ -159,7 +152,7 @@ cd landing-gear-project
 <p align="center"> <img src="/placeholder.svg?height=400&width=700" alt="Wiring Diagram" width="700"/></p>
 
 #### Pin Connections
-\`\`\`text
+```text
 Arduino/ESP32 Pin │ Komponen             │ Keterangan
 ──────────────────┼──────────────────────┼──────────────────────────
 D12 (GPIO 12)     │ Trig Pin Ultrasonik  │ Output sinyal trigger
@@ -171,7 +164,7 @@ SDA (A4 pada Uno) │ LCD I2C (SDA)        │ Data I2C
 SCL (A5 pada Uno) │ LCD I2C (SCL)        │ Clock I2C
 5V                │ VCC Ultrasonik, Servo│ Catu daya 5V
 GND               │ GND Ultrasonik, Servo│ Ground
-\`\`\`
+```
 *Catatan: Pastikan semua komponen memiliki ground yang sama. Untuk servo, disarankan menggunakan catu daya eksternal jika menggunakan banyak servo atau servo besar untuk menghindari kerusakan pada mikrokontroler.*
 
 ---

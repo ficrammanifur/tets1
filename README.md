@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/platform-Arduino%20%7C%20ESP32-informational" />
   <img src="https://img.shields.io/badge/sensor-Ultrasonic-orange" />
   <img src="https://img.shields.io/badge/actuator-Servo-red" />
-  <a href="https://github.com/yourusername/landing-gear-project/blob/main/LICENSE">
+  <a href="https://github.com/ficrammanifur/gesture-clone-robot/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT" />
   </a>
 </p>
@@ -128,10 +128,10 @@ landing-gear-project/
 
 ## ⚙️ Instalasi
 ### 1. 🔧 Clone Repository
-\`\`\`bash
-git clone https://github.com/yourusername/landing-gear-project.git
-cd landing-gear-project
-\`\`\`
+```bash
+git clone https://github.com/ficrammanifur/test1.git
+cd test1
+```
 *(Ganti \`yourusername\` dengan username GitHub Anda dan \`landing-gear-project\` dengan nama repositori Anda)*
 
 ### 2. 💻 Setup Arduino IDE
@@ -254,10 +254,10 @@ Gunakan GitHub Issues dengan informasi:
 ---
 
 ## 👨‍💻 Pengembang
-**[Nama Anda]**
-- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
-- 🌐 Portfolio: [yourportfolio.com](https://yourportfolio.com) (Opsional)
-- 📧 Email: youremail@example.com (Opsional)
+**Ficram Manifur**
+- 🐙 GitHub: [@ficrammanifur](https://github.com/ficrammanifur)
+- 🌐 Portfolio: [ficrammanifur.github.io](https://ficrammanifur.github.io/ficram-portfolio)
+- 📧 Email: ficramm@gmail.com
 
 ### 🙏 Acknowledgments
 - **Arduino Community** - Untuk platform dan library yang luar biasa.
@@ -267,9 +267,10 @@ Gunakan GitHub Issues dengan informasi:
 
 ## 📄 Lisensi
 Proyek ini dilisensikan di bawah **MIT License** - lihat file [LICENSE](LICENSE) untuk detail lengkap.
-\`\`\`text
+```text
 MIT License
-Copyright (c) 2025 [Your Name/Organization]
+
+Copyright (c) 2025 ficrammanifur
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -288,12 +289,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-\`\`\`
+```
 
 ---
 <div align="center">
 **✈️ Otomatisasi Pendaratan dengan Presisi**
+
 **⚡ Dibangun dengan Arduino, Ultrasonik & Servo**
+
 **⭐ Star this repo if you like it!**
+
 <p><a href="#top">⬆ Back on Top</a></p>
 </div>

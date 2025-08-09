@@ -40,27 +40,36 @@
 
 ---
 
-## Arduino UNO R3 Board
+# Arduino™ UNO R3 Board
 
-### Arduino Uno R3 Pinout
+> **Note:** Arduino™ is a trademark of Arduino AG.  
+> This project is not affiliated with or endorsed by Arduino.  
+> All trademarks and copyrights belong to their respective owners.
+
+---
+
+## Arduino UNO R3 Pinout
 <p align="center">
   <img src="Arduino-UNO-R3.png" alt="Arduino Uno R3 pinout" width="700"/>
 </p>
 
-### Arduino Uno R3 Schematics
+---
+
+## Arduino UNO R3 Schematics
 <p align="center">
   <img src="schematics.png" alt="Arduino Schematics" width="700"/>
 </p>
 
-### Arduino UNO R3 Datasheet
-```
-https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf
-```
+---
 
-### FOR MORE INFORMATION VISIT THIS SITE
-```
-https://docs.arduino.cc/hardware/uno-rev3/
-```
+## Arduino UNO R3 Datasheet
+[📄 Download Datasheet](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)
+
+---
+
+## Official Documentation
+🔗 [Arduino UNO Rev3 - Official Page](https://docs.arduino.cc/hardware/uno-rev3/)
+
 
 ---
 

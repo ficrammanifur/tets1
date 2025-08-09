@@ -14,6 +14,13 @@
 
 ---
 
+# Arduino™ UNO R3 Board
+
+> **Note:** Arduino™ is a trademark of Arduino AG.  
+> This project is not affiliated with or endorsed by Arduino.  
+> All trademarks and copyrights belong to their respective owners.
+
+---
 ## 📑 Table of Contents
 - [✨ Overview](#-overview)
 - [🚀 Fitur](#-fitur)
@@ -37,14 +44,6 @@
 - **Edukasi Elektronika** - Platform pembelajaran dasar mikrokontroler, sensor, dan aktuator.
 - **Simulasi** - Memberikan pemahaman dasar tentang mekanisme landing gear pesawat.
 - **Proyek Hobi** - Proyek yang menarik untuk penggemar elektronika dan robotika.
-
----
-
-# Arduino™ UNO R3 Board
-
-> **Note:** Arduino™ is a trademark of Arduino AG.  
-> This project is not affiliated with or endorsed by Arduino.  
-> All trademarks and copyrights belong to their respective owners.
 
 ---
 

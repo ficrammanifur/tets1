@@ -168,10 +168,15 @@ cd test1
         *   \`Servo\` (biasanya sudah terinstal)
         *   \`Wire\` (biasanya sudah terinstal)
 
+3. **Arduino IDE Settings**
+<p align="center">
+  <img src="Arduino_Settings.png" alt="Arduino IDE Settings" width="700"/>
+</p>
+
 ### 3. 🔌 Hardware Assembly
 #### Schematic
 <p align="center">
-  <img src="Arduino_Settings.png" alt="Arduino IDE Settings" width="700"/>
+  <img src="Schematic_Ficrammanifur.png" alt="Schematic" width="700"/>
 </p>
 
 #### Pin Connections

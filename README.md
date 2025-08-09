@@ -38,24 +38,26 @@
 - **Simulasi** - Memberikan pemahaman dasar tentang mekanisme landing gear pesawat.
 - **Proyek Hobi** - Proyek yang menarik untuk penggemar elektronika dan robotika.
 
-### Arduino UNO R3 Board
+---
 
-## Arduino Uno R3 Pinout
+## Arduino UNO R3 Board
+
+### Arduino Uno R3 Pinout
 <p align="center">
   <img src="Arduino-UNO-R3.png" alt="Arduino Uno R3 pinout" width="700"/>
 </p>
 
-## Arduino Uno R3 Schematics
+### Arduino Uno R3 Schematics
 <p align="center">
   <img src="schematics.png" alt="Arduino Schematics" width="700"/>
 </p>
 
-## Arduino UNO R3 Datasheet
+### Arduino UNO R3 Datasheet
 ```
 https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf
 ```
 
-## FOR MORE INFORMATION VISIT THIS SITE
+### FOR MORE INFORMATION VISIT THIS SITE
 ```
 https://docs.arduino.cc/hardware/uno-rev3/
 ```

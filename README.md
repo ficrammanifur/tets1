@@ -40,16 +40,16 @@
 
 ### Arduino UNO R3 Board
 
-**Arduino Uno R3 pinout**
+## Arduino Uno R3 pinout
 <p align="center">
   <img src="Arduino-UNO-R3.png" alt="Arduino Uno R3 pinout" width="700"/>
 </p>
 
-**Arduino IDE Settings**
+## Arduino IDE Settings
   <img src="Arduino_Settings.png" alt="Arduino IDE Settings" width="700"/>
 </p>
 
-**Datasheet**
+## Arduino UNO R3 Datasheet
 ```
 https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf
 ```

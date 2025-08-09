@@ -53,23 +53,16 @@
   <img src="Arduino-UNO-R3.png" alt="Arduino Uno R3 pinout" width="700"/>
 </p>
 
----
-
 ## Arduino UNO R3 Schematics
 <p align="center">
   <img src="schematics.png" alt="Arduino Schematics" width="700"/>
 </p>
 
----
-
 ## Arduino UNO R3 Datasheet
 [📄 Download Datasheet](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)
 
----
-
 ## Official Documentation
 🔗 [Arduino UNO Rev3 - Official Page](https://docs.arduino.cc/hardware/uno-rev3/)
-
 
 ---
 
@@ -175,9 +168,9 @@ cd test1
     *   Buka Arduino IDE.
     *   Pergi ke \`Sketch > Include Library > Manage Libraries...\`
     *   Cari dan instal:
-        *   \`LiquidCrystal I2C\` oleh Frank de Brabander
-        *   \`Servo\` (biasanya sudah terinstal)
-        *   \`Wire\` (biasanya sudah terinstal)
+        *   `LiquidCrystal I2C` oleh Frank de Brabander
+        *   `Servo` (biasanya sudah terinstal)
+        *   `Wire` (biasanya sudah terinstal)
 
 3. **Arduino IDE Settings**
 <p align="center">
@@ -300,7 +293,7 @@ Gunakan GitHub Issues dengan informasi:
 
 ### 🙏 Acknowledgments
 - **Arduino Community** - Untuk platform dan library yang luar biasa.
-- **Library Developers** - Untuk \`LiquidCrystal_I2C\` dan \`Servo\` libraries.
+- **Library Developers** - Untuk `LiquidCrystal_I2C` dan `Servo` libraries.
 
 ---
 

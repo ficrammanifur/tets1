@@ -132,7 +132,6 @@ landing-gear-project/
 git clone https://github.com/ficrammanifur/test1.git
 cd test1
 ```
-*(Ganti \`yourusername\` dengan username GitHub Anda dan \`landing-gear-project\` dengan nama repositori Anda)*
 
 ### 2. 💻 Setup Arduino IDE
 1.  **Download Arduino IDE** dari [arduino.cc](https://www.arduino.cc/en/software).
@@ -148,8 +147,8 @@ cd test1
         *   \`Wire\` (biasanya sudah terinstal)
 
 ### 3. 🔌 Hardware Assembly
-#### Wiring Diagram
-<p align="center"> <img src="/placeholder.svg?height=400&width=700" alt="Wiring Diagram" width="700"/></p>
+#### Schematic
+<p align="center"> <img src="/placeholder.svg?height=400&width=700" alt="Schematic_Ficrammanifur.png" width="700"/></p>
 
 #### Pin Connections
 ```text

@@ -40,18 +40,24 @@
 
 ### Arduino UNO R3 Board
 
-## Arduino Uno R3 pinout
+## Arduino Uno R3 Pinout
 <p align="center">
   <img src="Arduino-UNO-R3.png" alt="Arduino Uno R3 pinout" width="700"/>
 </p>
 
-## Arduino IDE Settings
-  <img src="Arduino_Settings.png" alt="Arduino IDE Settings" width="700"/>
+## Arduino Uno R3 Schematics
+<p align="center">
+  <img src="schematics.png" alt="Arduino Schematics" width="700"/>
 </p>
 
 ## Arduino UNO R3 Datasheet
 ```
 https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf
+```
+
+## FOR MORE INFORMATION VISIT THIS SITE
+```
+https://docs.arduino.cc/hardware/uno-rev3/
 ```
 
 ---
@@ -165,7 +171,8 @@ cd test1
 ### 3. 🔌 Hardware Assembly
 #### Schematic
 <p align="center">
-<img src="Schematic_Ficrammanifur.png" alt="Schematic" width="700"/>
+  <img src="Arduino_Settings.png" alt="Arduino IDE Settings" width="700"/>
+</p>
 
 #### Pin Connections
 ```text

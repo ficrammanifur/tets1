@@ -171,11 +171,6 @@ cd test1
         *   `Servo` (biasanya sudah terinstal)
         *   `Wire` (biasanya sudah terinstal)
 
-3. **Arduino IDE Settings**
-<p align="center">
-  <img src="Arduino_Settings.png" alt="Arduino IDE Settings" width="700"/>
-</p>
-
 ### 3. 🔌 Hardware Assembly
 #### Schematic
 <p align="center">
@@ -201,6 +196,12 @@ GND               │ GND Ultrasonik, Servo│ Ground
 ---
 
 ## 🚀 Cara Menjalankan
+
+### Arduino IDE Settings
+<p align="center">
+  <img src="Arduino_Settings.png" alt="Arduino IDE Settings" width="700"/>
+</p>
+
 1.  **Buka Kode**: Buka file \`landing_gear_auto.ino\` di Arduino IDE.
 2.  **Pilih Board**: Pergi ke \`Tools > Board\` dan pilih board Arduino/ESP32 yang Anda gunakan.
 3.  **Pilih Port**: Pergi ke \`Tools > Port\` dan pilih port serial yang terhubung dengan mikrokontroler Anda.

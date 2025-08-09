@@ -148,7 +148,8 @@ cd test1
 
 ### 3. 🔌 Hardware Assembly
 #### Schematic
-<p align="center"> <img src="/placeholder.svg?height=400&width=700" alt="Schematic_Ficrammanifur.png" width="700"/></p>
+<p align="center">
+<img src="Schematic_Ficrammanifur.png" alt="Schematic" width="700"/>
 
 #### Pin Connections
 ```text

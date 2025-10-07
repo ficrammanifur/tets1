@@ -77,45 +77,73 @@
 ## 🏗️ Arsitektur Sistem
 ### 🔗 Diagram Blok Hardware/Software
 ```text
-┌──────────────────┐     ┌───────────────────┐      ┌───────────────────┐
-│Sensor Ultrasonik │────►│   Arduino/ESP32   │─────►│    Servo Motor    │
-│   (HC-SR04)      │     │ (Mikrokontroler)  │      │       Depan       │
-└──────────────────┘     │                   │      ├───────────────────┤
-                         │                   │      │    Servo Motor    │
-                         │                   │      │   Belakang Kiri   │
-                         │                   │      ├───────────────────┤
-                         │                   │      │    Servo Motor    │
-                         │                   │      │   Belakang Kanan  │
-                         ├───────────────────┤      └───────────────────┘
-                         │    LCD I2C 16x2   │
-                         │ (Tampilan Status) │
-                         └───────────────────┘
+┌──────────────────┐       ┌────────────────────┐       ┌────────────────────────┐
+│ Sensor Ultrasonik│──────►│      Arduino       │──────►│      Servo Motor       │
+│     (HC-SR04)    │       │ (Mikrokontroler)   │       │  Depan, Blkg Kiri,     │
+└──────────────────┘       │                    │       │   Blkg Kanan (x3)      │
+                           │                    │       └────────────────────────┘
+                           │                    │
+                           │                    │       ┌────────────────────────┐
+                           │                    ├──────►│      LCD I2C 16x2      │
+                           │                    │       │ (Tampilan Mode, Gear,  │
+                           │                    │       │  dan Jarak Sensor)     │
+                           │                    │       └────────────────────────┘
+                           │                    │
+                           │                    │       ┌────────────────────────┐
+                           │                    ├──────►│  LED Merah & Hijau     │
+                           │                    │       │ (Indikator Gear Naik/  │
+                           │                    │       │  Turun)                │
+                           │                    │       └────────────────────────┘
+                           │                    │
+                           │                    │       ┌────────────────────────┐
+                           │                    ├──────►│ Tombol Mode & Manual   │
+                           │                    │       │ (Ganti Mode & Kontrol) │
+                           └────────────────────┘       └────────────────────────┘
+                                                        
 ```
 
 ### 📊 Flowchart Sistem
 ```mermaid
 graph TD
-    A(Start) --> B[Inisialisasi LCD, Servo, Pin Sensor]
-    B --> C[Baca Jarak dari Sensor Ultrasonik]
-    C --> D{Jarak &lt; 30cm?}
-    D -- Yes --> E[Set gearDown = true]
-    D -- No --> F[Set gearDown = false]
-    E --> G{gearDown sebelumnya false?}
-    F --> H{gearDown sebelumnya true?}
-    G -- Yes --> I[Turunkan Landing Gear - Servo 180°]
-    H -- Yes --> J[Naikkan Landing Gear - Servo 90°]
-    I --> K[Update LCD: POSISI: TURUN]
-    J --> L[Update LCD: POSISI: NAIK]
-    K --> M(Delay 200ms)
-    L --> M
-    M --> C
+    A([Mulai / Power ON]) --> B[Inisialisasi LCD, Servo, LED, Sensor & Tombol]
+    B --> C{Tombol Mode ditekan?}
+    C -- Ya --> D[Ubah mode AUTO ↔ MANUAL]
+    C -- Tidak --> E[Gunakan mode terakhir]
+
+    E --> F{Mode MANUAL?}
+    F -- Ya --> G[Tombol Manual ditekan?]
+    G -- Ya --> H[Toggle Gear (Naik/Turun)]
+    H --> I[Gerakkan Servo (3 unit serempak)]
+    I --> J[LED Indikator & LCD Update]
+    G -- Tidak --> J
+
+    F -- Tidak --> K[Baca jarak dari sensor ultrasonik]
+    K --> L[Filter pembacaan stabil (≥3x stabil)]
+    L --> M{Jarak < 28 cm & Gear Naik?}
+    M -- Ya --> N[Turunkan Gear (Servo 90°→180°)]
+    M -- Tidak --> O{Jarak > 32 cm & Gear Turun?}
+    O -- Ya --> P[Naikkan Gear (Servo 180°→90°)]
+    N --> Q[LED Merah flash & LCD "TURUN"]
+    P --> R[LED Hijau flash & LCD "NAIK"]
+    O -- Tidak --> S[Tidak ada aksi (Cooldown aktif)]
+
+    Q --> T[Delay & Reset stabilitas]
+    R --> T
+    S --> T
+    T --> C
+
     style A fill:#e1f5fe
     style B fill:#e1f5fe
-    style C fill:#e1f5fe
-    style I fill:#e1f5fe
-    style J fill:#e1f5fe
+    style C fill:#f1f8e9
+    style F fill:#f1f8e9
+    style G fill:#fff9c4
     style K fill:#e1f5fe
-    style L fill:#e1f5fe
+    style L fill:#fff3e0
+    style N fill:#ffcdd2
+    style P fill:#c8e6c9
+    style Q fill:#ffcdd2
+    style R fill:#c8e6c9
+    style J fill:#bbdefb
 ```
 
 ---

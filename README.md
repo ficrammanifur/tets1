@@ -216,17 +216,17 @@ cd test1
 
 #### Pin Connections
 ```text
-Arduino/ESP32 Pin │ Komponen             │ Keterangan
+Arduino UNO R3    │ Komponen             │ Keterangan
 ──────────────────┼──────────────────────┼──────────────────────────
-D12 (GPIO 12)     │ Trig Pin Ultrasonik  │ Output sinyal trigger
-D13 (GPIO 13)     │ Echo Pin Ultrasonik  │ Input sinyal echo
-D10 (GPIO 10)     │ Servo Depan (Signal) │ Kontrol servo depan
-D9 (GPIO 9)       │ Servo Belakang Kiri  │ Kontrol servo belakang kiri
-D11 (GPIO 11)     │ Servo Belakang Kanan │ Kontrol servo belakang kanan
-SDA (A4 pada Uno) │ LCD I2C (SDA)        │ Data I2C
-SCL (A5 pada Uno) │ LCD I2C (SCL)        │ Clock I2C
-5V                │ VCC Ultrasonik, Servo│ Catu daya 5V
-GND               │ GND Ultrasonik, Servo│ Ground
+│ D12 (GPIO 12)    │ Trig Ultrasonik      │ Output sinyal trigger         
+│ D13 (GPIO 13)    │ Echo Ultrasonik      │ Input sinyal pantulan         
+│ D10 (GPIO 10)    │ Servo Depan (Signal) │ Kontrol servo bagian depan    
+│ D9  (GPIO 9)     │ Servo Belakang Kiri  │ Kontrol servo bagian kiri     
+│ D11 (GPIO 11)    │ Servo Belakang Kanan │ Kontrol servo bagian kanan    
+│ SDA (A4 pada Uno)│ LCD I2C (SDA)        │ Jalur data komunikasi I2C     
+│ SCL (A5 pada Uno)│ LCD I2C (SCL)        │ Jalur clock komunikasi I2C    
+│ 5V               │ VCC Ultrasonik, Servo│ Sumber daya 5V dari MB102     
+│ GND              │ GND Ultrasonik, Servo│ Ground sistem                 
 ```
 *Catatan: Pastikan semua komponen memiliki ground yang sama. Untuk servo, disarankan menggunakan catu daya eksternal jika menggunakan banyak servo atau servo besar untuk menghindari kerusakan pada mikrokontroler.*
 

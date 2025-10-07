@@ -158,11 +158,16 @@ graph TD
 |----------|-------------|----------|----------------|---------|
 | **Arduino/ESP32** | Arduino Uno R3 | 1 | - | Mikrokontroler utama |
 | **Servo Motor** | SG90/MG90S | 3 | 10, 9, 11 | Aktuator jari |
-| **Sensor Ultrasonik** | HC-SR04 | 1 | Trig: 12, Echo: 13 | Deteksi jarak |
+| **Sensor Ultrasonik** | HC-SR04 | 1 | Trig: 4, Echo: 8 | Deteksi jarak |
 | **LCD I2C** | 16x2, Address 0x27 | 1 | SDA, SCL (A4, A5 pada Uno) | Menampilkan status |
+| **Push Button (Mode)** | Tactile Switch | 1 | 5 | Mengubah mode antara AUTO ↔ MANUAL |
+| **Push Button (Manual Control)** | Tactile Switch | 1 | 3 | Mengontrol gerakan gear secara manual |
+| **LED Merah** | 5 mm | 1 | 7 | Indikator Gear TURUN (DOWN) |
+| **LED Hijau** | 5 mm | 1 | 6 | Indikator Gear NAIK (UP) |
+| **Power Supply** | MB102 Power Supply Module | 1 | Input: 12 V (dari 3×18650 seri) | Menyediakan tegangan 5 V stabil ke seluruh rangkaian |
+| **Baterai Li-ion 18650** | 3.7 V, 2200–3000 mAh | 3 (seri) | - | Sumber daya utama (total ≈ 11.1–12.6 V) |
 | **Jumper Wires** | Male-Male, Male-Female | ~10 | - | Koneksi |
 | **Breadboard** | Opsional | 1 | - | Memudahkan wiring |
-| **Power Supply** | MB102 Power Supply Module | 1 | - | Input: 12 V (dari 3×18650 seri) |
 
 ### 💻 Perangkat Lunak
 | Software | Version | Fungsi |

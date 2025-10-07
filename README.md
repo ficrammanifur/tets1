@@ -105,45 +105,49 @@
 ### 📊 Flowchart Sistem
 ```mermaid
 graph TD
-    A([Mulai / Power ON]) --> B[Inisialisasi LCD, Servo, LED, Sensor & Tombol]
+    A([Mulai atau Power ON]) --> B[Inisialisasi LCD, Servo, LED, Sensor, dan Tombol]
     B --> C{Tombol Mode ditekan?}
-    C -- Ya --> D[Ubah mode AUTO ↔ MANUAL]
+    C -- Ya --> D[Ubah mode AUTO ke MANUAL atau sebaliknya]
     C -- Tidak --> E[Gunakan mode terakhir]
 
-    E --> F{Mode MANUAL?}
+    E --> F{Apakah Mode MANUAL?}
     F -- Ya --> G[Tombol Manual ditekan?]
-    G -- Ya --> H[Toggle Gear (Naik/Turun)]
-    H --> I[Gerakkan Servo (3 unit serempak)]
-    I --> J[LED Indikator & LCD Update]
+    G -- Ya --> H[Ubah status Gear Naik atau Turun]
+    H --> I[Gerakkan tiga Servo secara bersamaan]
+    I --> J[Perbarui LED indikator dan LCD]
     G -- Tidak --> J
 
     F -- Tidak --> K[Baca jarak dari sensor ultrasonik]
-    K --> L[Filter pembacaan stabil (≥3x stabil)]
-    L --> M{Jarak < 28 cm & Gear Naik?}
-    M -- Ya --> N[Turunkan Gear (Servo 90°→180°)]
-    M -- Tidak --> O{Jarak > 32 cm & Gear Turun?}
-    O -- Ya --> P[Naikkan Gear (Servo 180°→90°)]
-    N --> Q[LED Merah flash & LCD "TURUN"]
-    P --> R[LED Hijau flash & LCD "NAIK"]
-    O -- Tidak --> S[Tidak ada aksi (Cooldown aktif)]
+    K --> L[Filter pembacaan stabil minimal tiga kali]
+    L --> M{Jarak kurang dari 28 cm dan Gear Naik?}
+    M -- Ya --> N[Turunkan Gear ke posisi 180 derajat]
+    M -- Tidak --> O{Jarak lebih dari 32 cm dan Gear Turun?}
+    O -- Ya --> P[Naikkan Gear ke posisi 90 derajat]
+    N --> Q[LED Merah berkedip dan LCD tampilkan TURUN]
+    P --> R[LED Hijau berkedip dan LCD tampilkan NAIK]
+    O -- Tidak --> S[Tidak ada aksi karena Cooldown aktif]
 
-    Q --> T[Delay & Reset stabilitas]
+    Q --> T[Reset stabilitas dan tunggu sebentar]
     R --> T
     S --> T
     T --> C
 
-    style A fill:#e1f5fe
-    style B fill:#e1f5fe
-    style C fill:#f1f8e9
-    style F fill:#f1f8e9
-    style G fill:#fff9c4
-    style K fill:#e1f5fe
-    style L fill:#fff3e0
-    style N fill:#ffcdd2
-    style P fill:#c8e6c9
-    style Q fill:#ffcdd2
-    style R fill:#c8e6c9
-    style J fill:#bbdefb
+    style A fill:#e1f5fe,stroke:#90caf9
+    style B fill:#e1f5fe,stroke:#90caf9
+    style C fill:#f1f8e9,stroke:#aed581
+    style D fill:#f1f8e9,stroke:#aed581
+    style F fill:#fff9c4,stroke:#fff176
+    style G fill:#fff9c4,stroke:#fff176
+    style H fill:#ffe0b2,stroke:#ffb74d
+    style I fill:#ffe0b2,stroke:#ffb74d
+    style J fill:#bbdefb,stroke:#64b5f6
+    style K fill:#e1f5fe,stroke:#90caf9
+    style L fill:#fff3e0,stroke:#ffcc80
+    style N fill:#ffcdd2,stroke:#ef9a9a
+    style P fill:#c8e6c9,stroke:#81c784
+    style Q fill:#ffcdd2,stroke:#ef9a9a
+    style R fill:#c8e6c9,stroke:#81c784
+    style S fill:#eeeeee,stroke:#bdbdbd
 ```
 
 ---

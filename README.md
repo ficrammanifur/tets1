@@ -156,13 +156,13 @@ graph TD
 ### 📦 Perangkat Keras
 | Komponen | Spesifikasi | Quantity | Pin Connection | Fungsi |
 |----------|-------------|----------|----------------|---------|
-| **Arduino/ESP32** | Arduino Uno/Nano/ESP32 | 1 | - | Mikrokontroler utama |
+| **Arduino/ESP32** | Arduino Uno R3 | 1 | - | Mikrokontroler utama |
 | **Servo Motor** | SG90/MG90S | 3 | 10, 9, 11 | Aktuator jari |
 | **Sensor Ultrasonik** | HC-SR04 | 1 | Trig: 12, Echo: 13 | Deteksi jarak |
 | **LCD I2C** | 16x2, Address 0x27 | 1 | SDA, SCL (A4, A5 pada Uno) | Menampilkan status |
 | **Jumper Wires** | Male-Male, Male-Female | ~10 | - | Koneksi |
 | **Breadboard** | Opsional | 1 | - | Memudahkan wiring |
-| **Power Supply** | 5V (dari Arduino/eksternal) | 1 | - | Catu daya |
+| **Power Supply** | MB102 Power Supply Module | 1 | - | Input: 12 V (dari 3×18650 seri) |
 
 ### 💻 Perangkat Lunak
 | Software | Version | Fungsi |
